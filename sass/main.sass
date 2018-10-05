@@ -22,22 +22,22 @@ header
         background-color: $dark
         opacity: .7
 
+.logo-text
+    flex-grow: 1
+    color: #ffffff
+    font-size: 36px
+
 .nav-bar
     z-index: 1
     align-items: center
     justify-content: space-around
     height: 15vh
-    .logo-text
-        flex-grow: 1
-        color: #ffffff
-        font-size: 36px
     ul
         list-style-type: none
         li
             float: left
         a
             color: #ffffff
-            text-align: center
             padding: 14px 15px
             text-decoration: none
         a:hover
@@ -60,6 +60,9 @@ header
         text-align: center
         padding-left: 10vw
         padding-right: 10vw
+        h4
+            font-family: montserrat-p
+            font-weight: 300
         .slider-buttons
             flex-direction: row
         *
@@ -68,6 +71,7 @@ header
         button
             margin: auto
             width: 30%
+            
    
 button
     display: inline-block
@@ -76,9 +80,11 @@ button
     text-decoration: none
     background-color: #998675
     padding: 15px 45px
-    font-size: 13px
+    font-family: ralewayextrabold
+    font-size: 14px
+    line-height: 23px
     text-transform: uppercase
-    font-weight: 600
+    font-weight: 400
     letter-spacing: 3px
     border-radius: 2px
     text-align: center
@@ -122,7 +128,7 @@ button
         visibility: hidden
     .active
         h4
-            color: #c7b299
+            color: $accent
         .line
             visibility: visible
 
@@ -149,9 +155,13 @@ button
 .gradient-section
     padding-top: 48px
     padding-bottom: 48px
-    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+    h3
+        color: #ffffff    
+        font-family: raleway-example
+        font-weight: 400
     span
-        color: #c7b299
+        color: $accent
     *
         margin: 0
     button
@@ -189,19 +199,23 @@ button
     padding-bottom: 50px
     grid-template-columns: repeat(3, 1fr)
     grid-gap: 10px
-    overflow:hidden
+    overflow: hidden
     .project
         text-align: left
         position: relative
         *
             margin: 0
+            z-index: 1
         .buttons
-            position: absolute
-            margin-left: auto
-            margin-right: auto
             img
-                padding: 20px
+                position: absolute
                 visibility: hidden
+            .link
+                top: 30%
+                left: 35%
+            .lupa
+                top: 30%
+                right: 35%
         .triangle
             width: 0
             height: 0
@@ -215,6 +229,9 @@ button
             padding: 20px
         &:hover
             background-color: #362f2d
+            .img-responsive
+                background: #111111
+                opacity: 0.5
             .buttons
                 img
                     visibility: visible
@@ -242,7 +259,7 @@ button
         z-index: 1
         color: #ffffff
     .time
-        color: #c7b299;
+        color: $accent;
 
 .devices
     padding-top: $main-padding
@@ -270,7 +287,7 @@ button
         color: #ffffff
     h4
         font-style: 14px
-        color: #c7b299
+        color: $accent
     .item
         text-align: center
 
@@ -302,19 +319,22 @@ button
             &:hover
                 background-color: #362f2d
                 h4
-                    color: #c7b299
+                    color: $accent
                 p
                     color: #ffffff
                 .date
                     .month
                         background-color: #a48d72
                     .num
-                        background-color: #c7b299
+                        background-color: $accent
+                img
+                    background: #111111
+                    opacity: 0.5
         .text
             margin: 29px
             a
                 align-items: center
-                color: #c7b299;
+                color: $accent;
                 text-decoration: none
                 p
                     padding-right: 10px
@@ -322,7 +342,7 @@ button
         margin: 20px
 
 .lable
-    background-size: cover;
+    background-size: cover
     position: relative
     align-items: center
     justify-content: space-around
@@ -340,8 +360,8 @@ button
         padding-top: 100px
         padding-bottom: 100px
 
-footer
-    background-color: #191919;
+.footer
+    background-color: #191919
     padding: $main-padding
     justify-content: space-around
     *
@@ -356,11 +376,28 @@ footer
             flex-grow: 0
         h3
             color: #ffffff
+    .dark
+        color: #363636
+    .white
+        color: #ffffff
+    span
+        color: #00bff3
     .widget
         grid-template-columns: repeat(2, 1fr)
         grid-gap: 10px
         *
             margin: 0
             
+footer
+    padding-top: 30px
+    padding-bottom: 50px
+    background-color: #111111
+    color: #252525
+    .map
+        float: left
+    .authors
+        float: right
+        span
+            color: #555555
 
 @import "media" // Всегда в конце

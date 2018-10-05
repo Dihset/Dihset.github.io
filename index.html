@@ -115,11 +115,11 @@
 		<div class="projects grid">
 			<div class="project">
 				<div class="buttons">
-					<a href="#"><img src="img/content/3/c_link.png" alt=""></a>
-					<a href="#"><img src="img/content/3/c_lupa.png" alt=""></a>
+					<a href="#"><img src="img/content/3/c_link.png" alt="" class="link"></a>
+					<a href="#"><img src="img/content/3/c_lupa.png" alt="" class="lupa"></a>
 				</div>
 				<div class="triangle"></div>
-				<img src="img/content/3/photo1.jpg" alt="" class="img-responsive">
+				<div class="mask"><img src="img/content/3/photo1.jpg" alt="" class="img-responsive"></div>
 				<div class="text">
 					<h4>Claritas Etiam Processus</h4>
 					<p>Photography, Nature</p>
@@ -127,8 +127,8 @@
 			</div>
 			<div class="project">
 				<div class="buttons">
-					<a href="#"><img src="img/content/3/c_link.png" alt=""></a>
-					<a href="#"><img src="img/content/3/c_lupa.png" alt=""></a>
+					<a href="#"><img src="img/content/3/c_link.png" alt="" class="link"></a>
+					<a href="#"><img src="img/content/3/c_lupa.png" alt="" class="lupa"></a>
 				</div>
 				<div class="triangle"></div>
 				<img src="img/content/3/photo2.jpg" alt="" class="img-responsive">
@@ -139,8 +139,8 @@
 			</div>
 			<div class="project">
 				<div class="buttons">
-					<a href="#"><img src="img/content/3/c_link.png" alt=""></a>
-					<a href="#"><img src="img/content/3/c_lupa.png" alt=""></a>
+					<a href="#"><img src="img/content/3/c_link.png" alt="" class="link"></a>
+					<a href="#"><img src="img/content/3/c_lupa.png" alt="" class="lupa"></a>
 				</div>
 				<div class="triangle"></div>
 				<img src="img/content/3/photo3.jpg" alt="" class="img-responsive">
@@ -151,8 +151,8 @@
 			</div>
 			<div class="project">
 				<div class="buttons">
-					<a href="#"><img src="img/content/3/c_link.png" alt=""></a>
-					<a href="#"><img src="img/content/3/c_lupa.png" alt=""></a>
+					<a href="#"><img src="img/content/3/c_link.png" alt="" class="link"></a>
+					<a href="#"><img src="img/content/3/c_lupa.png" alt="" class="lupa"></a>
 				</div>
 				<div class="triangle"></div>
 				<img src="img/content/3/photo4.jpg" alt="" class="img-responsive">
@@ -163,8 +163,8 @@
 			</div>
 			<div class="project">
 				<div class="buttons">
-					<a href="#"><img src="img/content/3/c_link.png" alt=""></a>
-					<a href="#"><img src="img/content/3/c_lupa.png" alt=""></a>
+					<a href="#"><img src="img/content/3/c_link.png" alt="" class="link"></a>
+					<a href="#"><img src="img/content/3/c_lupa.png" alt="" class="lupa"></a>
 				</div>
 				<div class="triangle"></div>
 				<img src="img/content/3/photo5.jpg" alt="" class="img-responsive">
@@ -175,8 +175,8 @@
 			</div>
 			<div class="project">
 				<div class="buttons">
-					<a href="#"><img src="img/content/3/c_link.png" alt=""></a>
-					<a href="#"><img src="img/content/3/c_lupa.png" alt=""></a>
+					<a href="#"><img src="img/content/3/c_link.png" alt="" class="link"></a>
+					<a href="#"><img src="img/content/3/c_lupa.png" alt="" class="lupa"></a>
 				</div>
 				<div class="triangle"></div>
 				<img src="img/content/3/photo6.jpg" alt="" class="img-responsive">
@@ -310,14 +310,14 @@
 		<img src="img/content/8/c_logo-04.png" alt="">
 	</section>
 
-	<footer class="flex">
+	<section class="footer flex">
 		<div class="item">
 			<div class="logo">
 				<img src="img/logo.png" alt="">
-				<h3>Waxom</h3>
+				<div class="logo-text">Waxom</div>
 			</div>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
-			<a href="">Read More</a>
+			<a href="" class="flex"><p>Read More</p><div class="arrow"></div></a>
 		</div>
 		<div class="item">
 			<h4>Recent Posts</h4>
@@ -325,17 +325,17 @@
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
 			<hr>
 			<div class="date white">September 08, 2015</div>
-			<p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+			<p style="color: #c7b299">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
 			<hr>
 			<div class="date dark">September 08, 2015</div>
 			<p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
 		</div>
 		<div class="item">
 			<h4>Our Twitter</h4>
-			<p>@waxom Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+			<p><span>@waxom</span>Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
 			<div class="time">3 mins ago</div>
 			<hr>
-			<p>Mirum est #envato notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+			<p>Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
 			<div class="time">5 hours ago</div>
 			<hr>
 			<p>Soluta nobis option bit.ly/1Hniso7</p>
@@ -350,7 +350,13 @@
 				<img src="img/footer/photo4.jpg" alt="" class="img-responsive">
 			</div>
 		</div>
+	</section>
+
+	<footer>
+		<div class="map">Copyright © 2015 <span style="color: #959595">Waxom</span> |   Privacy Policy   |   <span style="color: #c7b299">FAQ</span>    |   Support</div>
+		<div class="authors">Designed by <span>ThemeFire</span>   |   Only on <span>Envato Market</span></div>
 	</footer>
+
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 
